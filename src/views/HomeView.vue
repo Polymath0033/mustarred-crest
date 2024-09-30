@@ -27,7 +27,7 @@ const servicesText = [{}];
 <template>
   <main class="w-full">
     <HeroVue />
-    <section class="px-8 sm:px-16 md:px-28 py-24"  id="about">
+    <section class="px-8 sm:px-16 md:px-28 pt-24 sm:py-24"  id="about">
       <button
         class="flex items-center px-3 py-2 rounded-[71px] w-fit gap-[10px] bg-[rgba(0,_31,_63,_0.04)] mx-auto text-primary"
       >
@@ -42,7 +42,7 @@ const servicesText = [{}];
         Crest your industry with a trusted Mustarred
       </h2>
       <div
-        class="py-24 w-full flex flex-col sm:flex-row gap-8 items-center h-full"
+        class="py-24 w-full flex flex-col sm:flex-row gap-8 items-center h-full "
       >
         <div
           class="flex flex-col p-4 bg-[rgba(127,_85,_218,_0.02)] rounded-2xl w-full"
@@ -132,7 +132,7 @@ const servicesText = [{}];
         </ul>
       </div>
     </section> -->
-    <section class="bg"></section>
+    <!-- <section class="bg"></section> -->
     <CrestHonor />
     <Testimonies />
     <div class="custom-container px-8 sm:px-16 md:px-28 py-24">

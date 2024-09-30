@@ -60,8 +60,8 @@ onBeforeMount(() => {
           <a href="#services">Services</a>
           <a href="#about">About us</a>
           <a href="#contact">Contact us</a>
-          <a href="blog">Blog</a>
-          <a href="faq">FAQ</a>
+          <a href="#blog">Blog</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <a
           target="_blank"
@@ -78,9 +78,9 @@ onBeforeMount(() => {
       </header>
 
       <section class="flex mt-24 sm:mt-[159px]">
-        <div class="flex flex-col w-full md:w-1/2">
+        <div class="flex flex-col gap-2 w-full md:w-1/2">
           <h1
-            class="text-white text-4xl text-center sm:text-start sm:text-[52px] font-semibold"
+            class="text-white text-4xl text-center sm:text-start sm:text-[52px] !leading-[120%] font-semibold"
           >
             Building a startup is hard enough
             <!-- {{ text.h1 }} -->

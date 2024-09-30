@@ -22,18 +22,18 @@ const testimonies = [
 </script>
 <template>
   <div class="px-8 sm:px-16 md:px-28 custom-container py-24 mx-auto">
-    <div class="overflow-x-scroll no-scrollbar mx-auto w-full">
+    <div class="sm:overflow-x-scroll sm:no-scrollbar mx-auto w-full">
       <h3 class="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
         Our client success stories
       </h3>
-      <div class="overflow-x-scroll no-scrollbar mx-auto w-full">
-        <div class="flex flex-col sm:flex-row gap-y-6 gap-4 mx-auto w-max">
+      <div class="sm:overflow-x-scroll sm:no-scrollbar mx-auto w-full">
+        <div class="flex flex-col sm:flex-row gap-y-6 gap-4 mx-auto sm:w-max">
           <article
             v-for="(testimony, i) in testimonies"
             :key="i"
             class="bg-[#FCFCFC] border border-[#F2F2F2] gap-2 p-2 rounded-xl"
           >
-            <div class="w-[380px] relative flex flex-col gap-3">
+            <div class="sm:w-[380px] relative flex flex-col gap-3">
               <p class="text-right text-[#828282] text-xs font-normal">
                 <!-- {_.date} -->
               </p>
