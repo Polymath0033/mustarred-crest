@@ -1,12 +1,12 @@
 <template>
   <section class="px-8 sm:px-16 md:px-28 flex flex-col gap-14 py-20">
     <div class="flex gap-8 flex-col sm:flex-row">
-      <div class="flex items-start w-full gap-8">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
           <img
             src="../assets/data-protection.png"
             alt="Data Protection and Security"
-            class="w-[calc(100%_-_20px)] h-[400px] rounded-lg"
+            class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
           />
         </div>
 
@@ -122,12 +122,12 @@
       </div>
     </div>
     <div class="flex gap-8 flex-col sm:flex-row">
-      <div class="flex items-start w-full gap-8">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
           <img
             src="../assets/corporate-governance.jpg"
             alt="Regulatory Compliance and Licensing"
-            class="w-[calc(100%_-_20px)] h-[400px] rounded-lg"
+            class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
           />
         </div>
         <div class="w-full flex flex-col gap-4">
@@ -192,12 +192,12 @@
       </div>
     </div>
     <div class="flex gap-8 flex-col sm:flex-row">
-      <div class="flex items-start w-full gap-8">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
           <img
             src="../assets/project-discussion-business-trip.jpg"
             alt="Corporate Governance & IP"
-            class="w-[calc(100%_-_20px)] h-[400px] rounded-lg"
+            class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
           />
         </div>
 
@@ -267,12 +267,12 @@
       </div>
     </div>
     <div class="flex gap-8 flex-col sm:flex-row">
-      <div class="flex items-start w-full gap-8">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
               <img
           src="../assets/group-business-people-desk.jpg"
           alt="Transaction Advisory"
-          class="w-[calc(100%_-_20px)] h-[400px] rounded-lg"
+          class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
         />
         </div>
       

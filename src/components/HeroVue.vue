@@ -1,13 +1,18 @@
 <script lang="ts" setup>
 import Logo from "./Logo.vue";
 import { RouterLink } from "vue-router";
+import SideVue from "./SideVue.vue";
 import { ref, onMounted, onBeforeMount } from 'vue'
+const side = ref(false);
+const sideHandler = () => {
+  side.value = !side.value;
+};
 const h1Text = ref('Building a startup is hard enough');
 const pText = ref('Get ahead with simple compliance');
 const animateText=()=>{
   setInterval(()=>{
-    h1Text.value = 'Building a startup is hard enough';
-    pText.value = 'Get ahead with simple compliance hello';
+    h1Text.value = 'Scale Confidently, with the right Security Certification';
+    pText.value = 'Secure your ISO, SOC, PCI-DSS, NDPA certifications with ease';
   }, 500)
 }
 onMounted(()=>{
@@ -18,10 +23,12 @@ onBeforeMount(()=>{
 })
 </script>
 <template>
+   <SideVue @side-handler="sideHandler" v-if="side"/>
   <div class="bg-bg-two h-[800px] animate-animate-hero px-8 md:px-28 py-6 bg-cover">
     <header class="flex justify-between items-center">
-      <RouterLink to="/"><Logo /></RouterLink>
-      <nav class="flex gap-4 text-white text-base !leading-[150%] font-medium">
+      <!-- <RouterLink to="/"><Logo /></RouterLink> -->
+       <a href="/"><Logo/></a>
+      <nav class="hidden md:flex gap-4 text-white text-base !leading-[150%] font-medium">
         <a href="#services">Services</a>
         <a href="#about">About us</a>
         <a href="#contact">Contact us</a>
@@ -30,23 +37,29 @@ onBeforeMount(()=>{
       </nav>
       <button
         type="button"
-        class="text-primary text-base font-semibold !leading-[150%] bg-white flex items-center justify-center px-7 py-3 rounded-[40px]"
+        class="hidden  text-primary text-base font-semibold !leading-[150%] bg-white md:flex items-center justify-center px-7 py-3 rounded-[40px]"
       >
         Contact us
       </button>
+      <button class="flex flex-col w-4 md:hidden" v-on:click="sideHandler">
+        <span class="bg-white w-4 h-0.5 mb-1"></span>
+        <span class="bg-white w-4 h-0.5 mb-1"></span>
+        <span class="bg-white w-4 h-0.5 mb-1"></span>
+      </button>
     </header>
-    <section class="flex mt-[159px]">
-      <div class="flex flex-col w-1/2">
-        <h1 class="text-white text-[52px] font-semibold">
+   
+    <section class="flex mt-24 sm:mt-[159px]">
+      <div class="flex flex-col w-full md:w-1/2">
+        <h1 class="text-white text-[42px] text-center sm:text-start sm:text-[52px] font-semibold">
           Building a startup is hard enough
         </h1>
-        <p class="text-white text-lg font-normal !leading-[32px]">
+        <p class="text-white text-center sm:text-start text-lg font-normal !leading-[32px]">
           {{pText}}
           <!-- Get ahead with simple compliance -->
         </p>
         <button
           type="button"
-          class="text-primary text-base font-semibold !leading-[150%] bg-white flex items-center justify-center gap-2 mt-10 px-4 py-3 w-fit rounded-[40px]"
+          class="text-primary mx-auto sm:mx-0 text-base font-semibold !leading-[150%] bg-white flex items-center justify-center gap-2 mt-10 px-4 py-3 w-fit rounded-[40px]"
         >
           <span>Schedule a consutation</span>
           <span
@@ -82,24 +95,24 @@ onBeforeMount(()=>{
     </section>
   </div>
   <section
-    class="mx-8 sm:mx-16 md:mx-28 bg-primary rounded-full custom-container -mt-10 flex justify-center"
+    class="mx-16 md:mx-28 bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
   >
     <ul
-      class="bg-primary w-fit py-8 flex flex-col gap-12 items-center justify-center sm:justify-between sm:flex-row"
+      class="w-fit px-8 py-8 flex flex-col sm:gap-8 md:gap-12 items-center justify-center sm:justify-between sm:flex-row "
     >
-      <li class="flex items-center gap-[14px] pb-8 sm:border-b-0 sm:pb-0 sm:pr-12 border-b sm:border-r border-[#E0E0E0]">
+      <li class="flex items-center gap-[14px]  flex-row py-12 sm:py-0 pb-8 sm:border-b-0 sm:pb-0 sm:pr-8 md:pr-12 border-b sm:border-r border-[#E0E0E0]">
         <p class="font-semibold text-[38px] text-white">12+</p>
         <span class="text-lg font-normal text-start text-[#FFFFFFA6]">
           Happy<br/>startups
         </span>
       </li>
-      <li class="flex items-center gap-[14px] py-8 sm:py-0 sm:border-b-0 sm:pb-0 sm:px-12 border-b sm:border-r border-[#E0E0E0" >
+      <li class="flex items-center gap-[14px]  flex-row py-8 sm:py-0 sm:border-b-0 sm:pb-0 sm:px-8 md:px-12 border-b sm:border-r border-[#E0E0E0" >
         <p class="font-semibold text-[38px] text-white">36</p>
         <span class="text-lg font-normal  text-[#FFFFFFA6] text-start">
           Total<br/> certificates
         </span>
       </li>
-      <li class="flex items-center gap-[14px] pt-8 sm:border-b-0 sm:pt-0 sm:pb-0 sm:pl-12">
+      <li class="flex items-center gap-[14px]  flex-row pt-8 pb-12 sm:border-b-0 sm:pt-0 sm:pb-0 sm:pl-8 md:pl-12">
         <p class="font-semibold text-[38px] text-white">10+</p>
         <span class="text-lg font-normal  text-[#FFFFFFA6] text-start">
           Events<br/> & news

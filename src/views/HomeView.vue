@@ -32,21 +32,21 @@ const servicesText = [{}];
         class="flex items-center px-3 py-2 rounded-[71px] w-fit gap-[10px] bg-[rgba(0,_31,_63,_0.04)] mx-auto text-primary"
       >
         <GridIcon />
-        <span class="text-lg font-medium"
+        <span class="text-sm sm:text-lg font-medium"
           >Get Ahead with SIMPLE COMPLIANCE</span
         >
       </button>
-      <h2 class="text-center text-primary mt-14 text-3xl font-semibold">
+      <h2 class="text-center text-primary mt-14 text-2xl  sm:text-3xl font-semibold">
         Crest your industry with a trusted Mustarred
       </h2>
-      <div class="py-24 w-full flex gap-8 items-center h-full">
+      <div class="py-24 w-full flex flex-col sm:flex-row gap-8 items-center h-full">
         <div
           class="flex flex-col p-4 bg-[rgba(127,_85,_218,_0.02)] rounded-2xl w-full"
         >
-          <img src="../assets/image-one.png" alt="Image one" />
+          <img src="../assets/image-one.png" alt="Image one" class="w-full" />
         </div>
         <div class="w-full py-8 flex flex-col gap-12">
-          <h3 class="text-xl text-[#434343] font-medium !leading-[25.2px]">
+          <h3 class="text-center sm:text-start text-xl text-[#434343] font-medium !leading-[25.2px]">
             Not the world, but you have our assurances that:
           </h3>
           <ul class="flex flex-col gap-10">
@@ -67,14 +67,14 @@ const servicesText = [{}];
           </ul>
           <button
             type="button"
-            class="shadow-[0px_33px_44px_0px_rgba(0,_31,_63,_0.10)] px-8 py-4 bg-primary w-fit text-base !leading-[150%] text-white rounded-[44px]"
+            class="shadow-[0px_33px_44px_0px_rgba(0,_31,_63,_0.10)] mx-auto sm:mx-0 px-8 py-4 bg-primary w-fit text-base !leading-[150%] text-white rounded-[44px]"
           >
             Schedule a consultation
           </button>
         </div>
       </div>
     </section>
-    <section class="bg-bg-blue px-8 sm:px-16 md:px-28 py-24">
+    <!-- <section class="bg-bg-blue px-8 sm:px-16 md:px-28 py-24">
       <h2
         class="text-[32px] text-center text-white !leading-[52px] font-semibold"
       >
@@ -120,26 +120,25 @@ const servicesText = [{}];
                 stroke="white"
                 stroke-width="0.267949"
               />
-            </svg>
-            <!-- <span class="w-16 h-16 rounded-[50%] border"></span> -->
+            </svg> 
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <section class="bg"></section>
     <CrestHonor />
-    <Testimonies/>
+    <Testimonies />
     <div class="custom-container px-8 sm:px-16 md:px-28 py-24">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.08468733512!2d3.3561607304068524!3d6.6131916755737885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ab8f0ab3f3%3A0x98715e9598fa4c17!2s9%20Femi%20Ogun%20St%2C%20Off%2C%20Shangisha%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1725510867130!5m2!1sen!2sng"
-            width="600"
-            height="450"
-            allowFullScreen={true}
-            title="Google Maps"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[400px] md:h-[700px]"
-          ></iframe>
-        </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.08468733512!2d3.3561607304068524!3d6.6131916755737885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93ab8f0ab3f3%3A0x98715e9598fa4c17!2s9%20Femi%20Ogun%20St%2C%20Off%2C%20Shangisha%20105102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1725510867130!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        allowFullScreen="{true}"
+        title="Google Maps"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="w-full h-[400px] md:h-[700px]"
+      ></iframe>
+    </div>
     <!-- <section>
       <div class="p-4 bg-gray-100 rounded-lg shadow-md">
         <h2 class="text-xl font-bold mb-4">Data Protection and Security</h2>
