@@ -87,7 +87,7 @@ const year = new Date().getFullYear();
       </div>
       <div class="border-t-[#F8F8FA] w-full sm:w-4/5 mx-auto border-t-2 py-6">
         <p class="text-[#797B89] text-sm !leading-[166.667%] text-center">
-          © {{year}} EntaAfrica. All rights reserved
+          © {{year}} Mustarred Crest. All rights reserved
         </p>
       </div>
     </footer>

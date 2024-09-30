@@ -27,7 +27,7 @@ const servicesText = [{}];
 <template>
   <main class="w-full">
     <HeroVue />
-    <section class="px-8 sm:px-16 md:px-28 py-24">
+    <section class="px-8 sm:px-16 md:px-28 py-24"  id="about">
       <button
         class="flex items-center px-3 py-2 rounded-[71px] w-fit gap-[10px] bg-[rgba(0,_31,_63,_0.04)] mx-auto text-primary"
       >
@@ -36,17 +36,23 @@ const servicesText = [{}];
           >Get Ahead with SIMPLE COMPLIANCE</span
         >
       </button>
-      <h2 class="text-center text-primary mt-14 text-2xl  sm:text-3xl font-semibold">
+      <h2
+        class="text-center text-primary mt-14 text-2xl sm:text-3xl font-semibold"
+      >
         Crest your industry with a trusted Mustarred
       </h2>
-      <div class="py-24 w-full flex flex-col sm:flex-row gap-8 items-center h-full">
+      <div
+        class="py-24 w-full flex flex-col sm:flex-row gap-8 items-center h-full"
+      >
         <div
           class="flex flex-col p-4 bg-[rgba(127,_85,_218,_0.02)] rounded-2xl w-full"
         >
           <img src="../assets/image-one.png" alt="Image one" class="w-full" />
         </div>
         <div class="w-full py-8 flex flex-col gap-12">
-          <h3 class="text-center sm:text-start text-xl text-[#434343] font-medium !leading-[25.2px]">
+          <h3
+            class="text-center sm:text-start text-xl text-[#434343] font-medium !leading-[25.2px]"
+          >
             Not the world, but you have our assurances that:
           </h3>
           <ul class="flex flex-col gap-10">
@@ -65,12 +71,13 @@ const servicesText = [{}];
               </div>
             </li>
           </ul>
-          <button
-            type="button"
+          <a
+            target="_blank"
+            href="mailto:info@mustarred.com"
             class="shadow-[0px_33px_44px_0px_rgba(0,_31,_63,_0.10)] mx-auto sm:mx-0 px-8 py-4 bg-primary w-fit text-base !leading-[150%] text-white rounded-[44px]"
           >
             Schedule a consultation
-          </button>
+          </a>
         </div>
       </div>
     </section>
