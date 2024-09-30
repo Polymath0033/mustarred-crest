@@ -53,7 +53,7 @@ onBeforeMount(() => {
     >
       <header class="flex justify-between items-center">
         <!-- <RouterLink to="/"><Logo /></RouterLink> -->
-        <a href="/"><Logo /></a>
+        <a href="#"><Logo /></a>
         <nav
           class="hidden md:flex gap-4 text-white text-base !leading-[150%] font-medium"
         >

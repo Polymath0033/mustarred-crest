@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
-import Logo from './Logo.vue';
+import { RouterLink } from "vue-router";
+import Logo from "./Logo.vue";
 defineEmits(["sideHandler", "getStartedHandler"]);
 </script>
 <template>
-    <Teleport to="body">
-    <aside className="fixed top-0 left-0 bg-primary w-full h-screen z-[3000] flex flex-col py-12 px-6 justify-between">
+  <!--           <a href="#services">Services</a>
+          <a href="#about">About us</a>
+          <a href="#contact">Contact us</a>
+          <a href="#blog">Blog</a>
+          <a href="#faq">FAQ</a> -->
+  <Teleport to="body">
+    <aside
+      className="fixed top-0 left-0 bg-primary w-full h-screen z-[3000] flex flex-col py-12 px-6 justify-between"
+    >
       <div className="flex justify-between">
         <RouterLink to="/">
           <Logo />
@@ -33,37 +40,31 @@ defineEmits(["sideHandler", "getStartedHandler"]);
       <nav>
         <ul className="flex flex-col items-center gap-4">
           <li className="font-medium text-base text-[#828282]">
-            <RouterLink v-on:click="$emit('sideHandler')" to="/">
-              Home
-            </RouterLink>
+            <a v-on:click="$emit('sideHandler')" href="#"> Home </a>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <RouterLink
-              v-on:click="$emit('sideHandler')"
-              to="/services"
-              
-            >
-              Services
-            </RouterLink>
+            <a v-on:click="$emit('sideHandler')" href="#services"> Services </a>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <RouterLink v-on:click="$emit('sideHandler')" to="/blogs" >
-              Blogs
-            </RouterLink>
+            <a v-on:click="$emit('sideHandler')" href="#about"> About us </a>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <RouterLink v-on:click="$emit('sideHandler')" to="/about" >
-              About us
-            </RouterLink>
+            <a v-on:click="$emit('sideHandler')" href="#contact"> Contact us </a>
+          </li>
+          <li className="font-medium text-base text-[#828282]">
+            <a v-on:click="$emit('sideHandler')" href="#blogs"> Blogs </a>
+          </li>
+          <li className="font-medium text-base text-[#828282]">
+            <a v-on:click="$emit('sideHandler')" href="#faq"> FAQ </a>
           </li>
         </ul>
       </nav>
-    <button
+      <button
         type="button"
-        class=" text-primary text-base font-semibold !leading-[150%] bg-white flex items-center justify-center px-7 py-3 rounded-[40px]"
+        class="text-primary text-base font-semibold !leading-[150%] bg-white flex items-center justify-center px-7 py-3 rounded-[40px]"
       >
         Contact us
       </button>
     </aside>
-    </Teleport>
+  </Teleport>
 </template>
