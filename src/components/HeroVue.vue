@@ -131,7 +131,7 @@ onBeforeMount(() => {
   </div>
 
   <section
-    class="mx-16 md:mx-28 bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
+    class="mx-16 md:mx-auto bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
   >
     <ul
       class="w-fit px-8 py-8 flex flex-col sm:gap-8 md:gap-12 items-center justify-center sm:justify-between sm:flex-row"
