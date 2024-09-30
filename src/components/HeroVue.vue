@@ -45,10 +45,11 @@ onBeforeMount(() => {
 </script>
 <template>
   <SideVue @side-handler="sideHandler" v-if="side" />
-  <div v-for="(text, index) in heroText">
+  <!-- <div v-for="(text, index) in heroText"> -->
+     <!-- v-if="index === currentText" -->
     <div
-      v-if="index === currentText"
-      :class="[`bg-bg-two h-[800px]  px-8 md:px-28 py-6 bg-cover transition-all`, text.bg]"
+     
+      :class="[`bg-bg-two h-[800px]  animate-animate-hero px-8 md:px-28 py-6  bg-cover `]"
     >
       <header class="flex justify-between items-center">
         <!-- <RouterLink to="/"><Logo /></RouterLink> -->
@@ -79,16 +80,16 @@ onBeforeMount(() => {
       <section class="flex mt-24 sm:mt-[159px]">
         <div class="flex flex-col w-full md:w-1/2">
           <h1
-            class="text-white text-[42px] text-center sm:text-start sm:text-[52px] font-semibold"
+            class="text-white text-4xl text-center sm:text-start sm:text-[52px] font-semibold"
           >
-            <!-- Building a startup is hard enough -->
-            {{ text.h1 }}
+            Building a startup is hard enough
+            <!-- {{ text.h1 }} -->
           </h1>
           <p
             class="text-white text-center sm:text-start text-lg font-normal !leading-[32px]"
           >
-            {{ text.p }}
-            <!-- Get ahead with simple compliance -->
+            <!-- {{ text.p }} -->
+            Get ahead with simple compliance
           </p>
           <a
             target="_blank"
@@ -128,7 +129,7 @@ onBeforeMount(() => {
         </div>
       </section>
     </div>
-  </div>
+  <!-- </div> -->
 
   <section
     class="mx-16 md:mx-auto bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
