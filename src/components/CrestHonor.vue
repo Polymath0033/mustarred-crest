@@ -4,7 +4,7 @@
       <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
           <img
-            src="../assets/data-protection.png"
+            src="../assets/woman-holding-padlock-laptop.jpg"
             alt="Data Protection and Security"
             class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
           />
@@ -125,7 +125,7 @@
       <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
         <div class="w-full">
           <img
-            src="../assets/corporate-governance.jpg"
+            src="../assets/businessman-consulting-legal-expert.jpg"
             alt="Regulatory Compliance and Licensing"
             class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
           />

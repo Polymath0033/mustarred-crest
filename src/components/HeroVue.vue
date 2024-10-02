@@ -89,7 +89,7 @@ onBeforeMount(() => {
             class="text-white text-center sm:text-start text-lg font-normal !leading-[32px]"
           >
             <!-- {{ text.p }} -->
-            Get ahead with simple compliance
+            Get ahead with efficient compliance management
           </p>
           <a
             target="_blank"
@@ -140,7 +140,7 @@ onBeforeMount(() => {
       <li
         class="flex items-center gap-[14px] flex-row py-12 sm:py-0 pb-8 sm:border-b-0 sm:pb-0 sm:pr-8 md:pr-12 border-b sm:border-r border-[#E0E0E0]"
       >
-        <p class="font-semibold text-[38px] text-white">12+</p>
+        <p class="font-semibold text-[38px] text-white">100+</p>
         <span class="text-lg font-normal text-start text-[#FFFFFFA6]">
           Happy<br />startups
         </span>
@@ -148,7 +148,7 @@ onBeforeMount(() => {
       <li
         class="flex items-center gap-[14px] flex-row py-8 sm:py-0 sm:border-b-0 sm:pb-0 sm:px-8 md:px-12 border-b sm:border-r border-[#E0E0E0"
       >
-        <p class="font-semibold text-[38px] text-white">36</p>
+        <p class="font-semibold text-[38px] text-white">50+</p>
         <span class="text-lg font-normal text-[#FFFFFFA6] text-start">
           Total<br />
           certificates
@@ -157,7 +157,7 @@ onBeforeMount(() => {
       <li
         class="flex items-center gap-[14px] flex-row pt-8 pb-12 sm:border-b-0 sm:pt-0 sm:pb-0 sm:pl-8 md:pl-12"
       >
-        <p class="font-semibold text-[38px] text-white">10+</p>
+        <p class="font-semibold text-[38px] text-white">100+</p>
         <span class="text-lg font-normal text-[#FFFFFFA6] text-start">
           Events<br />
           & news
