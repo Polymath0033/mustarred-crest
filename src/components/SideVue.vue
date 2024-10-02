@@ -4,11 +4,6 @@ import Logo from "./Logo.vue";
 defineEmits(["sideHandler", "getStartedHandler"]);
 </script>
 <template>
-  <!--           <a href="#services">Services</a>
-          <a href="#about">About us</a>
-          <a href="#contact">Contact us</a>
-          <a href="#blog">Blog</a>
-          <a href="#faq">FAQ</a> -->
   <Teleport to="body">
     <aside
       className="fixed top-0 left-0 bg-primary w-full h-screen z-[3000] flex flex-col py-12 px-6 justify-between"
@@ -40,10 +35,11 @@ defineEmits(["sideHandler", "getStartedHandler"]);
       <nav>
         <ul className="flex flex-col items-center gap-4">
           <li className="font-medium text-base text-[#828282]">
-            <a v-on:click="$emit('sideHandler')" href="#"> Home </a>
+            <RouterLink v-on:click="$emit('sideHandler')" to="#"> Home </RouterLink>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <a v-on:click="$emit('sideHandler')" href="#services"> Services </a>
+            <!-- <RouterLink v-on:click="$emit('sideHandler')" to="#services"> Services </RouterLink> -->
+             <a v-on:click="$emit('sideHandler')" href="#services"> Services</a>
           </li>
           <li className="font-medium text-base text-[#828282]">
             <a v-on:click="$emit('sideHandler')" href="#about"> About us </a>
@@ -52,10 +48,10 @@ defineEmits(["sideHandler", "getStartedHandler"]);
             <a v-on:click="$emit('sideHandler')" href="#contact"> Contact us </a>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <a v-on:click="$emit('sideHandler')" href="#blogs"> Blogs </a>
+            <RouterLink v-on:click="$emit('sideHandler')" to="#blogs"> Blogs </RouterLink>
           </li>
           <li className="font-medium text-base text-[#828282]">
-            <a v-on:click="$emit('sideHandler')" href="#faq"> FAQ </a>
+            <RouterLink v-on:click="$emit('sideHandler')" to="#faq"> FAQ </RouterLink>
           </li>
         </ul>
       </nav>
