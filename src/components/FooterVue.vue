@@ -1,14 +1,17 @@
 <script lang="ts" setup>
 import Logo from './Logo.vue';
+import { RouterLink } from 'vue-router';
 const year = new Date().getFullYear();
 </script>
 <template>
-    <footer class="px-8 custom-container sm:px-28 mt-36 bg-primary">
+    <footer class="px-8  sm:px-28 mt-36 bg-primary">
+      <div class="custom-container">
       <div class="flex flex-col sm:flex-row pt-[41px] pb-[35px] items-start justify-between w-full">
         <div class="flex flex-col gap-6">
           <div class=" h-14">
-            
+            <RouterLink to="/">
              <Logo />
+            </RouterLink>
           </div>
         </div>
         <div class="flex gap-8 flex-col sm:flex-row">
@@ -36,9 +39,18 @@ const year = new Date().getFullYear();
               Contacts
             </h6>
             <ul class="text-[#f1f1f1] text-base !leading-[142.857%]">
-              <li>About us</li>
-              <li>T&Cs</li>
-              <li>Privacy</li>
+
+              <li>
+                <RouterLink to="#about">About us</RouterLink>
+                </li>
+              <li>
+                <RouterLink to="#contact">Contact us</RouterLink>
+                </li>
+
+              <li>
+                <RouterLink to="#services">Privacy</RouterLink>
+            
+              </li>
             </ul>
           </div> 
           <div class="flex flex-col gap-4  text-sm font-normal items-start sm:items-end text-white">
@@ -85,11 +97,13 @@ const year = new Date().getFullYear();
           </div>
         </div>
       </div>
-      <div class="border-t-[#F8F8FA] w-full sm:w-4/5 mx-auto border-t-2 py-6">
+      <div class="border-t-[#F8F8FA] w-full  mx-auto border-t-2 py-6">
         <p class="text-[#797B89] text-sm !leading-[166.667%] text-center">
           © {{year}} Mustarred Crest. All rights reserved
         </p>
       </div>
+      </div>
+
     </footer>
 
 </template>

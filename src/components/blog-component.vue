@@ -38,12 +38,12 @@ const blogs = [
         MustarredCrest
         </span>
       </h2>
-      <div class="overflow-x-scroll w-full no-scrollbar">
-        <ul class="mt-10 w-max  flex gap-6">
+      <div class="w-full ">
+        <ul class="mt-10 w-full grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-6">
         
             <li v-for="(blog,index) in blogs"
               :key="index"
-              class="w-[390px] rounded-2xl border flex flex-col items-start p-4 gap-[10px] shadow-[0px_0px_64.8px_0px_rgba(127,_85,_218,_0.06)] border-[#f2f2f2]"
+              class=" rounded-2xl border flex flex-col items-start p-4 gap-[10px] shadow-[0px_0px_64.8px_0px_rgba(127,_85,_218,_0.06)] border-[#f2f2f2]"
             >
               <img
                 :src="imageHelper(blog.image)"

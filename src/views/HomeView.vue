@@ -27,7 +27,7 @@ const servicesText = [{}];
 <template>
   <main class="w-full">
     <HeroVue />
-    <section class="px-8 sm:px-16 md:px-28 pt-24 sm:py-24" id="about">
+    <section class="px-8 sm:px-16 md:px-28 pt-24 sm:py-24 custom-container" id="about">
       <button
         class="flex items-center px-3 py-2 rounded-[71px] w-fit gap-[10px] bg-[rgba(0,_31,_63,_0.04)] mx-auto text-primary"
       >

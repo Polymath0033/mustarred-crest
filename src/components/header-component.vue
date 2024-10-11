@@ -21,7 +21,7 @@ const navigateToIDAtHome = (id: string) => {
 <template>
   <SideVue @side-handler="sideHandler" v-if="side" />
   <header :class="['flex justify-between items-center', headerClass]">
-    <RouterLink to="/"><Logo /></RouterLink>
+    <div class="flex justify-between items-center custom-container w-full"> <RouterLink to="/"><Logo /></RouterLink>
 
     <nav
       :class="[
@@ -49,7 +49,8 @@ const navigateToIDAtHome = (id: string) => {
       <span class="bg-white w-4 h-0.5 mb-1"></span>
       <span class="bg-white w-4 h-0.5 mb-1"></span>
       <span class="bg-white w-4 h-0.5 mb-1"></span>
-    </button>
+    </button></div>
+   
   </header>
 </template>
 

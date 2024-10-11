@@ -52,34 +52,11 @@ onBeforeMount(() => {
      
       :class="[`bg-bg-two h-[800px]  animate-animate-hero px-8 md:px-28 py-6  bg-cover `]"
     >
-    <header-component />
-      <!-- <header class="flex justify-between items-center">
-        <RouterLink to="/"><Logo /></RouterLink>
+    <div class="custom-container">
+      <header-component />
 
-        <nav
-          class="hidden md:flex gap-4 text-white text-base !leading-[150%] font-medium"
-        >
-          <a href="#services">Services</a>
-          <a href="#about">About us</a>
-          <a href="#contact">Contact us</a>
-          <RouterLink to="/blog">Blog</RouterLink>
-          <a href="#faq">FAQ</a>
-        </nav>
-        <a
-          target="_blank"
-          href="mailto:info@mustarred.com"
-          class="hidden text-primary text-base font-semibold !leading-[150%] bg-white md:flex items-center justify-center px-7 py-3 rounded-[40px]"
-        >
-          Contact us
-        </a>
-        <button class="flex flex-col w-4 md:hidden" v-on:click="sideHandler">
-          <span class="bg-white w-4 h-0.5 mb-1"></span>
-          <span class="bg-white w-4 h-0.5 mb-1"></span>
-          <span class="bg-white w-4 h-0.5 mb-1"></span>
-        </button>
-      </header> -->
 
-      <section class="flex mt-24 sm:mt-[159px]">
+      <section class="flex mt-24 sm:mt-[159px] ">
         <div class="flex flex-col gap-2 w-full md:w-1/2">
           <h1
             class="text-white text-4xl text-center sm:text-start sm:text-[52px] !leading-[120%] font-semibold"
@@ -131,10 +108,12 @@ onBeforeMount(() => {
         </div>
       </section>
     </div>
+    
+    </div>
   <!-- </div> -->
 
   <section
-    class="mx-16 md:mx-auto bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
+    class="mx-16 md:mx-auto custom-container bg-primary rounded-[96px] sm:rounded-full custom-container -mt-10 flex justify-center sm:w-[calc(100%_-_4rem)]"
   >
     <ul
       class="w-fit px-8 py-8 flex flex-col sm:gap-8 md:gap-12 items-center justify-center sm:justify-between sm:flex-row"
