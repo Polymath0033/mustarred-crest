@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import Logo from "./Logo.vue";
 import { RouterLink } from "vue-router";
+import HeaderComponent from "./header-component.vue";
 import SideVue from "./SideVue.vue";
 import { ref, onMounted, onBeforeMount, type Ref } from "vue";
 const side = ref(false);
@@ -44,23 +45,24 @@ onBeforeMount(() => {
 });
 </script>
 <template>
-  <SideVue @side-handler="sideHandler" v-if="side" />
+
   <!-- <div v-for="(text, index) in heroText"> -->
      <!-- v-if="index === currentText" -->
     <div
      
       :class="[`bg-bg-two h-[800px]  animate-animate-hero px-8 md:px-28 py-6  bg-cover `]"
     >
-      <header class="flex justify-between items-center">
-        <!-- <RouterLink to="/"><Logo /></RouterLink> -->
-        <a href="#"><Logo /></a>
+    <header-component />
+      <!-- <header class="flex justify-between items-center">
+        <RouterLink to="/"><Logo /></RouterLink>
+
         <nav
           class="hidden md:flex gap-4 text-white text-base !leading-[150%] font-medium"
         >
           <a href="#services">Services</a>
           <a href="#about">About us</a>
           <a href="#contact">Contact us</a>
-          <a href="#blog">Blog</a>
+          <RouterLink to="/blog">Blog</RouterLink>
           <a href="#faq">FAQ</a>
         </nav>
         <a
@@ -75,7 +77,7 @@ onBeforeMount(() => {
           <span class="bg-white w-4 h-0.5 mb-1"></span>
           <span class="bg-white w-4 h-0.5 mb-1"></span>
         </button>
-      </header>
+      </header> -->
 
       <section class="flex mt-24 sm:mt-[159px]">
         <div class="flex flex-col gap-2 w-full md:w-1/2">

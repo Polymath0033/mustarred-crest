@@ -72,7 +72,7 @@
                 </svg> </i
               >DSR management
             </li>
-            <li class="flex gap-2 items-center">
+            <!-- <li class="flex gap-2 items-center">
               <i class="fas fa-file-signature mr-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@
                   />
                 </svg> </i
               >Certifications (ISO, SOC, HIPAA)
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -322,6 +322,51 @@
               >Technology licensing
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-8 flex-col sm:flex-row">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
+        <div class="w-full">
+              <img
+          src="../assets/privacy-policy-information-principle-strategy-rules-concept.jpg"
+          alt="Transaction Advisory"
+          class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
+        />
+        </div>
+      
+        <div class="w-full flex flex-col gap-4">
+          <h2 class="text-xl font-bold mb-4">DPIA, PIA and Privacy Review</h2>
+        </div>
+      </div>
+    </div>
+        <div class="flex gap-8 flex-col sm:flex-row">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
+        <div class="w-full">
+              <img
+          src="../assets/protection-accessible-permission-verification-security-concept.jpg"
+          alt="Transaction Advisory"
+          class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
+        />
+        </div>
+      
+        <div class="w-full flex flex-col gap-4">
+          <h2 class="text-xl font-bold mb-4">Internal training on privacy and data protection.</h2>
+        </div>
+      </div>
+    </div>
+        <div class="flex gap-8 flex-col sm:flex-row">
+      <div class="flex sm:items-start w-full gap-8 flex-col sm:flex-row items-center">
+        <div class="w-full">
+              <img
+          src="../assets/close-up-graduation-diploma.jpg"
+          alt="Transaction Advisory"
+          class="w-full sm:w-[calc(100%_-_20px)] h-[300px] sm:h-[400px] rounded-lg"
+        />
+        </div>
+      
+        <div class="w-full flex flex-col gap-4">
+          <h2 class="text-xl font-bold mb-4">Certifications (ISO, SOC, HIPAA)</h2>
         </div>
       </div>
     </div>
